@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link, Outlet } from "react-router-dom"
 
 class Registro extends Component {
     state = {  } 
@@ -7,6 +7,7 @@ class Registro extends Component {
         return (
 
             <form>
+              
   <fieldset>
     <legend >Registro</legend>
     <div class="form-group">
@@ -31,7 +32,8 @@ class Registro extends Component {
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmar Password"/>
     </div>
     <button type="submit" class="btn btn-primary">Crear</button>
-    </fieldset>       
+    </fieldset>    
+       
     </form>  
         );
     }

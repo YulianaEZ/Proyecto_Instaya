@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link, Outlet } from "react-router-dom"
+
 class Crear_Orden extends Component {
     state = {  } 
     render() { 
@@ -76,8 +78,11 @@ class Crear_Orden extends Component {
                   <label class="col-form-label mt-4" for="inputDefault">Ciudad de recogida</label>
                   <input type="text" class="form-control" placeholder="" id="inputDefault"/>
               </div>
-              <button type="submit" class="btn btn-primary">Crear</button>
-              </fieldset>       
+              <button className= "btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <Link className='nav-link' to="/Gestion_paquetes">Crear</Link>
+                </button>              
+              </fieldset>   
+                  
               </form> 
         );
     }

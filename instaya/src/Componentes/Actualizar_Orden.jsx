@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, Outlet } from "react-router-dom"
 
 class Actualizar_Orden extends Component {
     state = {  } 
@@ -77,6 +78,9 @@ class Actualizar_Orden extends Component {
                   <input type="text" class="form-control" placeholder="" id="inputDefault"/>
               </div>
               <button type="submit" class="btn btn-primary">Actualizar</button>
+              <button className= "btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <Link className='nav-link' to="/Crear_Orden">Crear orden</Link>
+                </button> 
               </fieldset>       
               </form> 
 );

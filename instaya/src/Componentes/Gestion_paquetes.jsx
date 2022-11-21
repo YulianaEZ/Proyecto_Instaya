@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, Outlet } from "react-router-dom"
 
 class  Gestion_paquetes extends Component {
     state = {  } 
@@ -7,7 +8,12 @@ class  Gestion_paquetes extends Component {
             
             <table class="table table-hover">
                 <legend >Listado de ordenes</legend>
-                <button type="button" class="btn btn-link">Crear orden</button>
+                <button className= "btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <Link className='nav-link' to="/Crear_Orden">Crear orden</Link>
+                </button> 
+                <button className= "btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <Link className='nav-link' to="/Actualizar_Orden">Actualizar orden</Link>
+                </button> 
                 <tbody>
                 
                 <tr class="table-active">
